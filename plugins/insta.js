@@ -8,7 +8,7 @@ bot(
   },
   async (message, match) => {
     match = match || message.reply_message.text
-    if (!match) return await message.send('_Example : insta url_')
+    if (!match) return await message.send('_Example : url_')
     const result = await instagram(match)
     if (!result.length)
       return await message.send('*Not found*', {
