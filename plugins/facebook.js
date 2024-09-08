@@ -8,10 +8,10 @@ bot(
   },
   async (message, match) => {
     match = isUrl(match || message.reply_message.text)
-    if (!match) return await message.send('_Example : fb url_')
+    if (!match) return await message.send('_Example : url_')
     const result = await facebook(match)
     if (!result.length)
-      return await message.send('*Not found*', {
+      return await message.send('*917478172267*', {
         quoted: message.quoted,
       })
     if (result.length == 1)
